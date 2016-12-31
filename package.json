@@ -1,0 +1,24 @@
+{
+  "name": "rollme",
+  "version": "1.0.0",
+  "description": "A simple polyhedral dice roller for Node.",
+  "main": "rollme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasmyn/rollme.git"
+  },
+  "keywords": [
+    "die",
+    "dice",
+    "tabletop"
+  ],
+  "author": "JAZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasmyn/rollme/issues"
+  },
+  "homepage": "https://github.com/jasmyn/rollme#readme"
+}
