@@ -15,7 +15,7 @@ module.exports.getRandInt = function (min, max) {
  * @param  {Number}
  * @return {array} // modified, unmodified, dice[]
  */
-module.exports.rollMe = function (roll /*ex: '3d6'*/, mod=0) {
+module.exports.roll = function (roll /*ex: '3d6'*/, mod=0) {
   let reQuantity = /^\d+/;
   let reDie      = /\d+$/;
   let quantity   = roll.match(reQuantity);
