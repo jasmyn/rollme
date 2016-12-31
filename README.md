@@ -5,10 +5,10 @@ A simple polyhedral dice roller for Node.
 -----------------------------------------
 ~~~
 var rollme = require('./rollme');  
-var roll = rollme.roll("2d4", 2);
+var roll = rollme.roll("2d4", 2, true);
 ~~~
 
-The first parameter is the quantity and type of dice to roll, the second is an optional modifier.
+The first parameter is the quantity and type of dice to roll, the second is an optional modifier. The third is if you'll allow negative modified results (this defaults to false).
 
 The result object you get back looks like this...
 

@@ -13,9 +13,10 @@ module.exports.getRandInt = function (min, max) {
  * Simulates rolling dice (with optional modifier)
  * @param  {string}
  * @param  {Number}
+ * @param  {boolean} // negative results allowed?
  * @return {array} // modified, unmodified, dice[]
  */
-module.exports.roll = function (roll /*ex: '3d6'*/, mod=0) {
+module.exports.roll = function (roll /*ex: '3d6'*/, mod=0, neg=false) {
   let reQuantity = /^\d+/;
   let reDie      = /\d+$/;
   let quantity   = roll.match(reQuantity);
@@ -34,6 +35,9 @@ module.exports.roll = function (roll /*ex: '3d6'*/, mod=0) {
 
   modified = total + mod;
   unmodified = total;
+
+  /* disallow negative results */
+  if ((neg == false) && (modified < 0)) { modified = 0; }
 
   /* load return object */
   let result = [];
