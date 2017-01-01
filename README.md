@@ -10,7 +10,7 @@ var roll = rollme.roll('2d4', 3, true);
 
 The first parameter is the quantity and type of dice to roll, the second is an optional modifier. The third is if you'll allow negative modified results (this defaults to false).
 
-The result object you get back looks like this...
+The result array you get back looks like this...
 
 ~~~
 roll[0] // modified result  
