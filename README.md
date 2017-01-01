@@ -1,8 +1,5 @@
 rollme
 ======
-
-A simple polyhedral dice roller for Node.
------------------------------------------
 ~~~
 var rollme = require('./rollme');  
 var roll = rollme.roll('2d4', 3, true);
